@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F1605" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TemperatureViewController">
+            <connections>
+                <outlet property="CTemperature" destination="Fc7-QG-f2A" id="a1i-us-R2c"/>
+                <outlet property="FTemperature" destination="jCl-rn-kXf" id="Ps3-90-dgc"/>
+                <outlet property="currentlb" destination="kGY-ET-irN" id="CaX-qP-uSw"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="temperature" translatesAutoresizingMaskIntoConstraints="NO" id="vbl-cf-mNk">
+                    <rect key="frame" x="188" y="94" width="225" height="225"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="225" id="82Z-6r-0ak"/>
+                        <constraint firstAttribute="height" constant="225" id="bWC-GJ-bcr"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6xi-4J-C0F">
+                    <rect key="frame" x="187" y="172" width="1" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="7Fe-jh-S6F"/>
+                        <constraint firstAttribute="width" constant="1" id="sOh-Of-fuj"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCl-rn-kXf">
+                    <rect key="frame" x="295" y="212" width="60" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="1G8-Nv-MYD"/>
+                        <constraint firstAttribute="width" constant="60" id="bkJ-gx-pDk"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.10588235294117647" green="0.82352941176470584" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fc7-QG-f2A">
+                    <rect key="frame" x="250" y="177" width="53" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="Bz5-Ky-WAF"/>
+                        <constraint firstAttribute="width" constant="53" id="att-Q0-yVH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.10588235294117647" green="0.82352941176470584" blue="0.97254901960784312" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="当前温度选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kGY-ET-irN">
+                    <rect key="frame" x="20" y="389" width="102" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.87450980392156863" green="0.44313725490196076" blue="0.015686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="vbl-cf-mNk" firstAttribute="leading" secondItem="6xi-4J-C0F" secondAttribute="trailing" constant="100" id="47C-Am-CIi"/>
+                <constraint firstItem="vbl-cf-mNk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7Qc-Ag-5BN"/>
+                <constraint firstAttribute="bottom" secondItem="kGY-ET-irN" secondAttribute="bottom" constant="152" id="K0V-bW-l78"/>
+                <constraint firstItem="kGY-ET-irN" firstAttribute="top" secondItem="vbl-cf-mNk" secondAttribute="bottom" constant="70" id="KwI-qM-TwA"/>
+                <constraint firstItem="jCl-rn-kXf" firstAttribute="leading" secondItem="6xi-4J-C0F" secondAttribute="trailing" constant="107" id="b2e-RS-Z5w"/>
+                <constraint firstItem="6xi-4J-C0F" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="172" id="cIS-QA-XX7"/>
+                <constraint firstItem="vbl-cf-mNk" firstAttribute="leading" secondItem="6xi-4J-C0F" secondAttribute="trailing" id="cuC-dw-d4f"/>
+                <constraint firstItem="Fc7-QG-f2A" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="177" id="eoL-s6-krM"/>
+                <constraint firstItem="vbl-cf-mNk" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="hmM-jC-jMf"/>
+                <constraint firstAttribute="trailing" secondItem="jCl-rn-kXf" secondAttribute="trailing" constant="263" id="rSJ-hj-wtU"/>
+                <constraint firstItem="kGY-ET-irN" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" id="tdX-I8-yMC"/>
+                <constraint firstItem="jCl-rn-kXf" firstAttribute="top" secondItem="Fc7-QG-f2A" secondAttribute="bottom" constant="14" id="u09-SH-pDS"/>
+                <constraint firstItem="Fc7-QG-f2A" firstAttribute="leading" secondItem="6xi-4J-C0F" secondAttribute="trailing" constant="62" id="wu9-dF-2kk"/>
+            </constraints>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="47C-Am-CIi"/>
+                    <exclude reference="rSJ-hj-wtU"/>
+                    <exclude reference="K0V-bW-l78"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="430" y="370"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="temperature" width="225" height="223"/>
+    </resources>
+</document>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CheckPeripheral">
+            <connections>
+                <outlet property="LeftFoot" destination="CAB-9d-Q7M" id="QJ0-Ud-9ll"/>
+                <outlet property="RightFoot" destination="4Bi-06-wDg" id="P56-F1-H0n"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueTooth" translatesAutoresizingMaskIntoConstraints="NO" id="sBk-Lp-WdV">
+                    <rect key="frame" x="285" y="285" width="30" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="sBk-Lp-WdV" secondAttribute="height" multiplier="1:1" id="KTB-VY-dkQ"/>
+                        <constraint firstAttribute="width" constant="30" id="UH2-Iy-Onq"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rightfoot" translatesAutoresizingMaskIntoConstraints="NO" id="4Bi-06-wDg">
+                    <rect key="frame" x="355" y="242" width="72" height="116"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="ssr-Rh-A84" appends="YES" id="pWu-ax-yVX"/>
+                    </connections>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leftfoot" translatesAutoresizingMaskIntoConstraints="NO" id="CAB-9d-Q7M">
+                    <rect key="frame" x="173" y="242" width="72" height="116"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="80" id="Oz1-kf-hdO"/>
+                        <constraint firstAttribute="width" constant="72" id="hS4-X5-JyK"/>
+                        <constraint firstAttribute="width" secondItem="CAB-9d-Q7M" secondAttribute="height" multiplier="70:112" id="tCs-XU-pjV"/>
+                    </constraints>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Oz1-kf-hdO"/>
+                        </mask>
+                    </variation>
+                    <variation key="heightClass=compact-widthClass=regular">
+                        <mask key="constraints">
+                            <include reference="Oz1-kf-hdO"/>
+                            <exclude reference="hS4-X5-JyK"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="2hC-28-UZp" appends="YES" id="THW-hx-V2I"/>
+                    </connections>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" red="0.52549019607843139" green="0.68235294117647061" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="CAB-9d-Q7M" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="E38-Xc-h5e"/>
+                <constraint firstItem="4Bi-06-wDg" firstAttribute="width" secondItem="CAB-9d-Q7M" secondAttribute="width" id="Jnw-ul-CWf"/>
+                <constraint firstItem="4Bi-06-wDg" firstAttribute="height" secondItem="CAB-9d-Q7M" secondAttribute="height" id="NmQ-2O-Agm"/>
+                <constraint firstItem="sBk-Lp-WdV" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="VPt-Ss-TXs"/>
+                <constraint firstItem="sBk-Lp-WdV" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Wpm-mO-TtN"/>
+                <constraint firstItem="4Bi-06-wDg" firstAttribute="leading" secondItem="sBk-Lp-WdV" secondAttribute="trailing" constant="40" id="dTo-ZF-wGR"/>
+                <constraint firstItem="4Bi-06-wDg" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="fA1-Dc-Xns"/>
+                <constraint firstItem="sBk-Lp-WdV" firstAttribute="leading" secondItem="CAB-9d-Q7M" secondAttribute="trailing" constant="40" id="sUQ-bX-oIu"/>
+            </constraints>
+            <point key="canvasLocation" x="342" y="419.5"/>
+        </view>
+        <tapGestureRecognizer id="2hC-28-UZp">
+            <connections>
+                <action selector="clickleftfoot:" destination="-1" id="K4C-JH-zCz"/>
+            </connections>
+        </tapGestureRecognizer>
+        <tapGestureRecognizer id="ssr-Rh-A84">
+            <connections>
+                <action selector="clickrightfoot:" destination="-1" id="vNz-Kj-l7g"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="BlueTooth" width="25" height="40"/>
+        <image name="leftfoot" width="70" height="112"/>
+        <image name="rightfoot" width="70" height="112"/>
+    </resources>
+</document>

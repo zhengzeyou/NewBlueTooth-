@@ -1,0 +1,819 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4BDBD1291C58F1CA00945407 /* EGODatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1211C58F1CA00945407 /* EGODatabase.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4BDBD12A1C58F1CA00945407 /* EGODatabaseRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1231C58F1CA00945407 /* EGODatabaseRequest.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4BDBD12B1C58F1CA00945407 /* EGODatabaseResult.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1251C58F1CA00945407 /* EGODatabaseResult.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4BDBD12C1C58F1CA00945407 /* EGODatabaseRow.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1271C58F1CA00945407 /* EGODatabaseRow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4BDBD12D1C58F1CA00945407 /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1281C58F1CA00945407 /* README.markdown */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		4BDBD12F1C58F25100945407 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BDBD12E1C58F25100945407 /* libsqlite3.0.tbd */; };
+		4BDBD1331C58F29600945407 /* CountAllViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1321C58F29600945407 /* CountAllViewController.m */; };
+		4BDBD13A1C58F2B300945407 /* CountStepsTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1361C58F2B300945407 /* CountStepsTableView.m */; };
+		4BDBD13B1C58F2B300945407 /* CountStepsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1381C58F2B300945407 /* CountStepsTableViewCell.m */; };
+		4BDBD13C1C58F2B300945407 /* CountStepsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4BDBD1391C58F2B300945407 /* CountStepsTableViewCell.xib */; };
+		4BDBD1401C58F2DD00945407 /* StepData.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD13F1C58F2DD00945407 /* StepData.m */; };
+		4BDBD1441C58F30100945407 /* StepDataDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4BDBD1431C58F30100945407 /* StepDataDB.m */; };
+		5305B2531C50894900F20AAB /* NSString+Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 5305B2521C50894900F20AAB /* NSString+Data.m */; };
+		5386E84D1C51E774001B18EB /* BabyBluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E83E1C51E774001B18EB /* BabyBluetooth.m */; };
+		5386E84E1C51E774001B18EB /* BabyCallback.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E8401C51E774001B18EB /* BabyCallback.m */; };
+		5386E84F1C51E774001B18EB /* BabyCentralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E8421C51E774001B18EB /* BabyCentralManager.m */; };
+		5386E8501C51E774001B18EB /* BabyOptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E8441C51E774001B18EB /* BabyOptions.m */; };
+		5386E8511C51E774001B18EB /* BabyPeripheralManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E8461C51E774001B18EB /* BabyPeripheralManager.m */; };
+		5386E8521C51E774001B18EB /* BabyRhythm.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E8481C51E774001B18EB /* BabyRhythm.m */; };
+		5386E8531C51E774001B18EB /* BabySpeaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E84A1C51E774001B18EB /* BabySpeaker.m */; };
+		5386E8541C51E774001B18EB /* BabyToy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E84C1C51E774001B18EB /* BabyToy.m */; };
+		5386E85A1C51E816001B18EB /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E8561C51E816001B18EB /* SVIndefiniteAnimatedView.m */; };
+		5386E85B1C51E816001B18EB /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5386E8571C51E816001B18EB /* SVProgressHUD.bundle */; };
+		5386E85C1C51E816001B18EB /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 5386E8591C51E816001B18EB /* SVProgressHUD.m */; };
+		53F526391C47902900D81645 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F526381C47902900D81645 /* main.m */; };
+		53F5263C1C47902900D81645 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F5263B1C47902900D81645 /* AppDelegate.m */; };
+		53F526421C47902900D81645 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F526401C47902900D81645 /* Main.storyboard */; };
+		53F526451C47902900D81645 /* NewBlueTooth.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 53F526431C47902900D81645 /* NewBlueTooth.xcdatamodeld */; };
+		53F526471C47902900D81645 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F526461C47902900D81645 /* Assets.xcassets */; };
+		53F5264A1C47902900D81645 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 53F526481C47902900D81645 /* LaunchScreen.storyboard */; };
+		53F526551C47902900D81645 /* NewBlueToothTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F526541C47902900D81645 /* NewBlueToothTests.m */; };
+		53F526601C47902900D81645 /* NewBlueToothUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F5265F1C47902900D81645 /* NewBlueToothUITests.m */; };
+		53F526781C47916700D81645 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F526771C47916700D81645 /* FirstViewController.m */; };
+		53F5267C1C4798D600D81645 /* CheckPeripheral.m in Sources */ = {isa = PBXBuildFile; fileRef = 53F5267A1C4798D600D81645 /* CheckPeripheral.m */; };
+		53F5267D1C4798D600D81645 /* CheckPeripheral.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53F5267B1C4798D600D81645 /* CheckPeripheral.xib */; };
+		53FF27ED1C48923F009B4A09 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FF27EB1C48923F009B4A09 /* MainViewController.m */; };
+		53FF27EE1C48923F009B4A09 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FF27EC1C48923F009B4A09 /* MainViewController.xib */; };
+		53FF27F11C4895AE009B4A09 /* NSUserDefaults+Klanguage.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FF27F01C4895AE009B4A09 /* NSUserDefaults+Klanguage.m */; };
+		53FF27F51C48995F009B4A09 /* TemperatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FF27F31C48995F009B4A09 /* TemperatureViewController.m */; };
+		53FF27F61C48995F009B4A09 /* TemperatureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 53FF27F41C48995F009B4A09 /* TemperatureViewController.xib */; };
+		53FF27FA1C48C9AC009B4A09 /* TemperatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = 53FF27F91C48C9AC009B4A09 /* TemperatureView.m */; };
+		624C42D81C716255003B01BB /* PeripheralChoose.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C42D71C716255003B01BB /* PeripheralChoose.m */; };
+		624C42DC1C7177E9003B01BB /* PeripheralModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 624C42DB1C7177E9003B01BB /* PeripheralModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		53F526511C47902900D81645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53F5262C1C47902900D81645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53F526331C47902900D81645;
+			remoteInfo = NewBlueTooth;
+		};
+		53F5265C1C47902900D81645 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53F5262C1C47902900D81645 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 53F526331C47902900D81645;
+			remoteInfo = NewBlueTooth;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4BDBD1201C58F1CA00945407 /* EGODatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabase.h; sourceTree = "<group>"; };
+		4BDBD1211C58F1CA00945407 /* EGODatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabase.m; sourceTree = "<group>"; };
+		4BDBD1221C58F1CA00945407 /* EGODatabaseRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRequest.h; sourceTree = "<group>"; };
+		4BDBD1231C58F1CA00945407 /* EGODatabaseRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRequest.m; sourceTree = "<group>"; };
+		4BDBD1241C58F1CA00945407 /* EGODatabaseResult.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseResult.h; sourceTree = "<group>"; };
+		4BDBD1251C58F1CA00945407 /* EGODatabaseResult.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseResult.m; sourceTree = "<group>"; };
+		4BDBD1261C58F1CA00945407 /* EGODatabaseRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EGODatabaseRow.h; sourceTree = "<group>"; };
+		4BDBD1271C58F1CA00945407 /* EGODatabaseRow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EGODatabaseRow.m; sourceTree = "<group>"; };
+		4BDBD1281C58F1CA00945407 /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		4BDBD12E1C58F25100945407 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4BDBD1311C58F29600945407 /* CountAllViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountAllViewController.h; sourceTree = "<group>"; };
+		4BDBD1321C58F29600945407 /* CountAllViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountAllViewController.m; sourceTree = "<group>"; };
+		4BDBD1351C58F2B300945407 /* CountStepsTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountStepsTableView.h; sourceTree = "<group>"; };
+		4BDBD1361C58F2B300945407 /* CountStepsTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountStepsTableView.m; sourceTree = "<group>"; };
+		4BDBD1371C58F2B300945407 /* CountStepsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountStepsTableViewCell.h; sourceTree = "<group>"; };
+		4BDBD1381C58F2B300945407 /* CountStepsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountStepsTableViewCell.m; sourceTree = "<group>"; };
+		4BDBD1391C58F2B300945407 /* CountStepsTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CountStepsTableViewCell.xib; sourceTree = "<group>"; };
+		4BDBD13E1C58F2DD00945407 /* StepData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepData.h; sourceTree = "<group>"; };
+		4BDBD13F1C58F2DD00945407 /* StepData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepData.m; sourceTree = "<group>"; };
+		4BDBD1421C58F30100945407 /* StepDataDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StepDataDB.h; sourceTree = "<group>"; };
+		4BDBD1431C58F30100945407 /* StepDataDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StepDataDB.m; sourceTree = "<group>"; };
+		5305B2511C50894900F20AAB /* NSString+Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Data.h"; sourceTree = "<group>"; };
+		5305B2521C50894900F20AAB /* NSString+Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Data.m"; sourceTree = "<group>"; };
+		5386E83D1C51E774001B18EB /* BabyBluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyBluetooth.h; sourceTree = "<group>"; };
+		5386E83E1C51E774001B18EB /* BabyBluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyBluetooth.m; sourceTree = "<group>"; };
+		5386E83F1C51E774001B18EB /* BabyCallback.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCallback.h; sourceTree = "<group>"; };
+		5386E8401C51E774001B18EB /* BabyCallback.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCallback.m; sourceTree = "<group>"; };
+		5386E8411C51E774001B18EB /* BabyCentralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyCentralManager.h; sourceTree = "<group>"; };
+		5386E8421C51E774001B18EB /* BabyCentralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyCentralManager.m; sourceTree = "<group>"; };
+		5386E8431C51E774001B18EB /* BabyOptions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyOptions.h; sourceTree = "<group>"; };
+		5386E8441C51E774001B18EB /* BabyOptions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyOptions.m; sourceTree = "<group>"; };
+		5386E8451C51E774001B18EB /* BabyPeripheralManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyPeripheralManager.h; sourceTree = "<group>"; };
+		5386E8461C51E774001B18EB /* BabyPeripheralManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyPeripheralManager.m; sourceTree = "<group>"; };
+		5386E8471C51E774001B18EB /* BabyRhythm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyRhythm.h; sourceTree = "<group>"; };
+		5386E8481C51E774001B18EB /* BabyRhythm.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyRhythm.m; sourceTree = "<group>"; };
+		5386E8491C51E774001B18EB /* BabySpeaker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabySpeaker.h; sourceTree = "<group>"; };
+		5386E84A1C51E774001B18EB /* BabySpeaker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabySpeaker.m; sourceTree = "<group>"; };
+		5386E84B1C51E774001B18EB /* BabyToy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BabyToy.h; sourceTree = "<group>"; };
+		5386E84C1C51E774001B18EB /* BabyToy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BabyToy.m; sourceTree = "<group>"; };
+		5386E8551C51E816001B18EB /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		5386E8561C51E816001B18EB /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		5386E8571C51E816001B18EB /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		5386E8581C51E816001B18EB /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		5386E8591C51E816001B18EB /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		53F526341C47902900D81645 /* NewBlueTooth.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewBlueTooth.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F526381C47902900D81645 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		53F5263A1C47902900D81645 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		53F5263B1C47902900D81645 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		53F526411C47902900D81645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		53F526441C47902900D81645 /* NewBlueTooth.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewBlueTooth.xcdatamodel; sourceTree = "<group>"; };
+		53F526461C47902900D81645 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		53F526491C47902900D81645 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		53F5264B1C47902900D81645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F526501C47902900D81645 /* NewBlueToothTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBlueToothTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F526541C47902900D81645 /* NewBlueToothTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBlueToothTests.m; sourceTree = "<group>"; };
+		53F526561C47902900D81645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F5265B1C47902900D81645 /* NewBlueToothUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NewBlueToothUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		53F5265F1C47902900D81645 /* NewBlueToothUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBlueToothUITests.m; sourceTree = "<group>"; };
+		53F526611C47902900D81645 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		53F526761C47916700D81645 /* FirstViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		53F526771C47916700D81645 /* FirstViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		53F526791C4798D600D81645 /* CheckPeripheral.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckPeripheral.h; sourceTree = "<group>"; };
+		53F5267A1C4798D600D81645 /* CheckPeripheral.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckPeripheral.m; sourceTree = "<group>"; };
+		53F5267B1C4798D600D81645 /* CheckPeripheral.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CheckPeripheral.xib; sourceTree = "<group>"; };
+		53FF27EA1C48923F009B4A09 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		53FF27EB1C48923F009B4A09 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		53FF27EC1C48923F009B4A09 /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		53FF27EF1C4895AE009B4A09 /* NSUserDefaults+Klanguage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+Klanguage.h"; sourceTree = "<group>"; };
+		53FF27F01C4895AE009B4A09 /* NSUserDefaults+Klanguage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+Klanguage.m"; sourceTree = "<group>"; };
+		53FF27F21C48995F009B4A09 /* TemperatureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureViewController.h; sourceTree = "<group>"; };
+		53FF27F31C48995F009B4A09 /* TemperatureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureViewController.m; sourceTree = "<group>"; };
+		53FF27F41C48995F009B4A09 /* TemperatureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TemperatureViewController.xib; sourceTree = "<group>"; };
+		53FF27F81C48C9AC009B4A09 /* TemperatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureView.h; sourceTree = "<group>"; };
+		53FF27F91C48C9AC009B4A09 /* TemperatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureView.m; sourceTree = "<group>"; };
+		624C42D61C716255003B01BB /* PeripheralChoose.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralChoose.h; sourceTree = "<group>"; };
+		624C42D71C716255003B01BB /* PeripheralChoose.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralChoose.m; sourceTree = "<group>"; };
+		624C42DA1C7177E9003B01BB /* PeripheralModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeripheralModel.h; sourceTree = "<group>"; };
+		624C42DB1C7177E9003B01BB /* PeripheralModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeripheralModel.m; sourceTree = "<group>"; };
+		B647EE1E1C745BA8007750EC /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		53F526311C47902900D81645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDBD12F1C58F25100945407 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F5264D1C47902900D81645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F526581C47902900D81645 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4BDBD11F1C58F1CA00945407 /* EGODatabase */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBD1201C58F1CA00945407 /* EGODatabase.h */,
+				4BDBD1211C58F1CA00945407 /* EGODatabase.m */,
+				4BDBD1221C58F1CA00945407 /* EGODatabaseRequest.h */,
+				4BDBD1231C58F1CA00945407 /* EGODatabaseRequest.m */,
+				4BDBD1241C58F1CA00945407 /* EGODatabaseResult.h */,
+				4BDBD1251C58F1CA00945407 /* EGODatabaseResult.m */,
+				4BDBD1261C58F1CA00945407 /* EGODatabaseRow.h */,
+				4BDBD1271C58F1CA00945407 /* EGODatabaseRow.m */,
+				4BDBD1281C58F1CA00945407 /* README.markdown */,
+			);
+			name = EGODatabase;
+			path = NewBlueTooth/EGODatabase;
+			sourceTree = "<group>";
+		};
+		4BDBD1301C58F27F00945407 /* 计步器 */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBD1411C58F2F000945407 /* DataBase */,
+				4BDBD13D1C58F2C800945407 /* Model */,
+				4BDBD1341C58F29A00945407 /* View */,
+				4BDBD1311C58F29600945407 /* CountAllViewController.h */,
+				4BDBD1321C58F29600945407 /* CountAllViewController.m */,
+			);
+			name = "计步器";
+			sourceTree = "<group>";
+		};
+		4BDBD1341C58F29A00945407 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBD1351C58F2B300945407 /* CountStepsTableView.h */,
+				4BDBD1361C58F2B300945407 /* CountStepsTableView.m */,
+				4BDBD1371C58F2B300945407 /* CountStepsTableViewCell.h */,
+				4BDBD1381C58F2B300945407 /* CountStepsTableViewCell.m */,
+				4BDBD1391C58F2B300945407 /* CountStepsTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		4BDBD13D1C58F2C800945407 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBD13E1C58F2DD00945407 /* StepData.h */,
+				4BDBD13F1C58F2DD00945407 /* StepData.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		4BDBD1411C58F2F000945407 /* DataBase */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBD1421C58F30100945407 /* StepDataDB.h */,
+				4BDBD1431C58F30100945407 /* StepDataDB.m */,
+			);
+			name = DataBase;
+			sourceTree = "<group>";
+		};
+		5386E83C1C51E774001B18EB /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				5386E83D1C51E774001B18EB /* BabyBluetooth.h */,
+				5386E83E1C51E774001B18EB /* BabyBluetooth.m */,
+				5386E83F1C51E774001B18EB /* BabyCallback.h */,
+				5386E8401C51E774001B18EB /* BabyCallback.m */,
+				5386E8411C51E774001B18EB /* BabyCentralManager.h */,
+				5386E8421C51E774001B18EB /* BabyCentralManager.m */,
+				5386E8431C51E774001B18EB /* BabyOptions.h */,
+				5386E8441C51E774001B18EB /* BabyOptions.m */,
+				5386E8451C51E774001B18EB /* BabyPeripheralManager.h */,
+				5386E8461C51E774001B18EB /* BabyPeripheralManager.m */,
+				5386E8471C51E774001B18EB /* BabyRhythm.h */,
+				5386E8481C51E774001B18EB /* BabyRhythm.m */,
+				5386E8491C51E774001B18EB /* BabySpeaker.h */,
+				5386E84A1C51E774001B18EB /* BabySpeaker.m */,
+				5386E84B1C51E774001B18EB /* BabyToy.h */,
+				5386E84C1C51E774001B18EB /* BabyToy.m */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		5386E85D1C51E81A001B18EB /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				5386E8551C51E816001B18EB /* SVIndefiniteAnimatedView.h */,
+				5386E8561C51E816001B18EB /* SVIndefiniteAnimatedView.m */,
+				5386E8571C51E816001B18EB /* SVProgressHUD.bundle */,
+				5386E8581C51E816001B18EB /* SVProgressHUD.h */,
+				5386E8591C51E816001B18EB /* SVProgressHUD.m */,
+			);
+			name = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		53F5262B1C47902900D81645 = {
+			isa = PBXGroup;
+			children = (
+				4BDBD12E1C58F25100945407 /* libsqlite3.0.tbd */,
+				5386E85D1C51E81A001B18EB /* SVProgressHUD */,
+				4BDBD11F1C58F1CA00945407 /* EGODatabase */,
+				5386E83C1C51E774001B18EB /* objc */,
+				624C42D91C717794003B01BB /* Model */,
+				53FF27F71C48C984009B4A09 /* View */,
+				53F526361C47902900D81645 /* NewBlueTooth */,
+				53F526531C47902900D81645 /* NewBlueToothTests */,
+				53F5265E1C47902900D81645 /* NewBlueToothUITests */,
+				53F526351C47902900D81645 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		53F526351C47902900D81645 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				53F526341C47902900D81645 /* NewBlueTooth.app */,
+				53F526501C47902900D81645 /* NewBlueToothTests.xctest */,
+				53F5265B1C47902900D81645 /* NewBlueToothUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		53F526361C47902900D81645 /* NewBlueTooth */ = {
+			isa = PBXGroup;
+			children = (
+				4BDBD1301C58F27F00945407 /* 计步器 */,
+				5305B2511C50894900F20AAB /* NSString+Data.h */,
+				5305B2521C50894900F20AAB /* NSString+Data.m */,
+				53FF27EF1C4895AE009B4A09 /* NSUserDefaults+Klanguage.h */,
+				53FF27F01C4895AE009B4A09 /* NSUserDefaults+Klanguage.m */,
+				53F5263A1C47902900D81645 /* AppDelegate.h */,
+				53F5263B1C47902900D81645 /* AppDelegate.m */,
+				53F526761C47916700D81645 /* FirstViewController.h */,
+				53F526771C47916700D81645 /* FirstViewController.m */,
+				53F526791C4798D600D81645 /* CheckPeripheral.h */,
+				53F5267A1C4798D600D81645 /* CheckPeripheral.m */,
+				53F5267B1C4798D600D81645 /* CheckPeripheral.xib */,
+				53FF27EA1C48923F009B4A09 /* MainViewController.h */,
+				53FF27EB1C48923F009B4A09 /* MainViewController.m */,
+				53FF27EC1C48923F009B4A09 /* MainViewController.xib */,
+				53FF27F21C48995F009B4A09 /* TemperatureViewController.h */,
+				53FF27F31C48995F009B4A09 /* TemperatureViewController.m */,
+				53FF27F41C48995F009B4A09 /* TemperatureViewController.xib */,
+				53F526401C47902900D81645 /* Main.storyboard */,
+				53F526461C47902900D81645 /* Assets.xcassets */,
+				53F526481C47902900D81645 /* LaunchScreen.storyboard */,
+				53F5264B1C47902900D81645 /* Info.plist */,
+				53F526431C47902900D81645 /* NewBlueTooth.xcdatamodeld */,
+				53F526371C47902900D81645 /* Supporting Files */,
+			);
+			path = NewBlueTooth;
+			sourceTree = "<group>";
+		};
+		53F526371C47902900D81645 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				53F526381C47902900D81645 /* main.m */,
+				B647EE1E1C745BA8007750EC /* PrefixHeader.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		53F526531C47902900D81645 /* NewBlueToothTests */ = {
+			isa = PBXGroup;
+			children = (
+				53F526541C47902900D81645 /* NewBlueToothTests.m */,
+				53F526561C47902900D81645 /* Info.plist */,
+			);
+			path = NewBlueToothTests;
+			sourceTree = "<group>";
+		};
+		53F5265E1C47902900D81645 /* NewBlueToothUITests */ = {
+			isa = PBXGroup;
+			children = (
+				53F5265F1C47902900D81645 /* NewBlueToothUITests.m */,
+				53F526611C47902900D81645 /* Info.plist */,
+			);
+			path = NewBlueToothUITests;
+			sourceTree = "<group>";
+		};
+		53FF27F71C48C984009B4A09 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				53FF27F81C48C9AC009B4A09 /* TemperatureView.h */,
+				53FF27F91C48C9AC009B4A09 /* TemperatureView.m */,
+				624C42D61C716255003B01BB /* PeripheralChoose.h */,
+				624C42D71C716255003B01BB /* PeripheralChoose.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		624C42D91C717794003B01BB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				624C42DA1C7177E9003B01BB /* PeripheralModel.h */,
+				624C42DB1C7177E9003B01BB /* PeripheralModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		53F526331C47902900D81645 /* NewBlueTooth */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F526641C47902900D81645 /* Build configuration list for PBXNativeTarget "NewBlueTooth" */;
+			buildPhases = (
+				53F526301C47902900D81645 /* Sources */,
+				53F526311C47902900D81645 /* Frameworks */,
+				53F526321C47902900D81645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NewBlueTooth;
+			productName = NewBlueTooth;
+			productReference = 53F526341C47902900D81645 /* NewBlueTooth.app */;
+			productType = "com.apple.product-type.application";
+		};
+		53F5264F1C47902900D81645 /* NewBlueToothTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F526671C47902900D81645 /* Build configuration list for PBXNativeTarget "NewBlueToothTests" */;
+			buildPhases = (
+				53F5264C1C47902900D81645 /* Sources */,
+				53F5264D1C47902900D81645 /* Frameworks */,
+				53F5264E1C47902900D81645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53F526521C47902900D81645 /* PBXTargetDependency */,
+			);
+			name = NewBlueToothTests;
+			productName = NewBlueToothTests;
+			productReference = 53F526501C47902900D81645 /* NewBlueToothTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		53F5265A1C47902900D81645 /* NewBlueToothUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 53F5266A1C47902900D81645 /* Build configuration list for PBXNativeTarget "NewBlueToothUITests" */;
+			buildPhases = (
+				53F526571C47902900D81645 /* Sources */,
+				53F526581C47902900D81645 /* Frameworks */,
+				53F526591C47902900D81645 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				53F5265D1C47902900D81645 /* PBXTargetDependency */,
+			);
+			name = NewBlueToothUITests;
+			productName = NewBlueToothUITests;
+			productReference = 53F5265B1C47902900D81645 /* NewBlueToothUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53F5262C1C47902900D81645 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = starlinktech;
+				TargetAttributes = {
+					53F526331C47902900D81645 = {
+						CreatedOnToolsVersion = 7.2;
+					};
+					53F5264F1C47902900D81645 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 53F526331C47902900D81645;
+					};
+					53F5265A1C47902900D81645 = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 53F526331C47902900D81645;
+					};
+				};
+			};
+			buildConfigurationList = 53F5262F1C47902900D81645 /* Build configuration list for PBXProject "NewBlueTooth" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 53F5262B1C47902900D81645;
+			productRefGroup = 53F526351C47902900D81645 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				53F526331C47902900D81645 /* NewBlueTooth */,
+				53F5264F1C47902900D81645 /* NewBlueToothTests */,
+				53F5265A1C47902900D81645 /* NewBlueToothUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		53F526321C47902900D81645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5386E85B1C51E816001B18EB /* SVProgressHUD.bundle in Resources */,
+				53F5264A1C47902900D81645 /* LaunchScreen.storyboard in Resources */,
+				53FF27F61C48995F009B4A09 /* TemperatureViewController.xib in Resources */,
+				53F526471C47902900D81645 /* Assets.xcassets in Resources */,
+				53FF27EE1C48923F009B4A09 /* MainViewController.xib in Resources */,
+				53F526421C47902900D81645 /* Main.storyboard in Resources */,
+				53F5267D1C4798D600D81645 /* CheckPeripheral.xib in Resources */,
+				4BDBD13C1C58F2B300945407 /* CountStepsTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F5264E1C47902900D81645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F526591C47902900D81645 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		53F526301C47902900D81645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4BDBD1291C58F1CA00945407 /* EGODatabase.m in Sources */,
+				4BDBD12D1C58F1CA00945407 /* README.markdown in Sources */,
+				53FF27F11C4895AE009B4A09 /* NSUserDefaults+Klanguage.m in Sources */,
+				624C42D81C716255003B01BB /* PeripheralChoose.m in Sources */,
+				53F526781C47916700D81645 /* FirstViewController.m in Sources */,
+				5386E8501C51E774001B18EB /* BabyOptions.m in Sources */,
+				53F526451C47902900D81645 /* NewBlueTooth.xcdatamodeld in Sources */,
+				5386E8511C51E774001B18EB /* BabyPeripheralManager.m in Sources */,
+				4BDBD13B1C58F2B300945407 /* CountStepsTableViewCell.m in Sources */,
+				624C42DC1C7177E9003B01BB /* PeripheralModel.m in Sources */,
+				4BDBD1401C58F2DD00945407 /* StepData.m in Sources */,
+				5386E85A1C51E816001B18EB /* SVIndefiniteAnimatedView.m in Sources */,
+				5386E84D1C51E774001B18EB /* BabyBluetooth.m in Sources */,
+				4BDBD13A1C58F2B300945407 /* CountStepsTableView.m in Sources */,
+				5386E8521C51E774001B18EB /* BabyRhythm.m in Sources */,
+				5386E85C1C51E816001B18EB /* SVProgressHUD.m in Sources */,
+				5386E84E1C51E774001B18EB /* BabyCallback.m in Sources */,
+				5386E8541C51E774001B18EB /* BabyToy.m in Sources */,
+				5386E8531C51E774001B18EB /* BabySpeaker.m in Sources */,
+				53FF27F51C48995F009B4A09 /* TemperatureViewController.m in Sources */,
+				4BDBD12A1C58F1CA00945407 /* EGODatabaseRequest.m in Sources */,
+				53F5267C1C4798D600D81645 /* CheckPeripheral.m in Sources */,
+				4BDBD12B1C58F1CA00945407 /* EGODatabaseResult.m in Sources */,
+				4BDBD1441C58F30100945407 /* StepDataDB.m in Sources */,
+				4BDBD1331C58F29600945407 /* CountAllViewController.m in Sources */,
+				5386E84F1C51E774001B18EB /* BabyCentralManager.m in Sources */,
+				5305B2531C50894900F20AAB /* NSString+Data.m in Sources */,
+				4BDBD12C1C58F1CA00945407 /* EGODatabaseRow.m in Sources */,
+				53FF27FA1C48C9AC009B4A09 /* TemperatureView.m in Sources */,
+				53FF27ED1C48923F009B4A09 /* MainViewController.m in Sources */,
+				53F5263C1C47902900D81645 /* AppDelegate.m in Sources */,
+				53F526391C47902900D81645 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F5264C1C47902900D81645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F526551C47902900D81645 /* NewBlueToothTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		53F526571C47902900D81645 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				53F526601C47902900D81645 /* NewBlueToothUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		53F526521C47902900D81645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53F526331C47902900D81645 /* NewBlueTooth */;
+			targetProxy = 53F526511C47902900D81645 /* PBXContainerItemProxy */;
+		};
+		53F5265D1C47902900D81645 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 53F526331C47902900D81645 /* NewBlueTooth */;
+			targetProxy = 53F5265C1C47902900D81645 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		53F526401C47902900D81645 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F526411C47902900D81645 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		53F526481C47902900D81645 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				53F526491C47902900D81645 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		53F526621C47902900D81645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sisi Tian (PG7P5HYKGT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sisi Tian (PG7P5HYKGT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewBlueTooth/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "f53075d2-2e01-44e0-b19c-cea729986e39";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		53F526631C47902900D81645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sisi Tian (PG7P5HYKGT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Sisi Tian (PG7P5HYKGT)";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/NewBlueTooth/PrefixHeader.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "f53075d2-2e01-44e0-b19c-cea729986e39";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		53F526651C47902900D81645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NewBlueTooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = jlkjglj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		53F526661C47902900D81645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = NewBlueTooth/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = jlkjglj;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		53F526681C47902900D81645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewBlueToothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.NewBlueToothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewBlueTooth.app/NewBlueTooth";
+			};
+			name = Debug;
+		};
+		53F526691C47902900D81645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NewBlueToothTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.NewBlueToothTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NewBlueTooth.app/NewBlueTooth";
+			};
+			name = Release;
+		};
+		53F5266B1C47902900D81645 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewBlueToothUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.NewBlueToothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NewBlueTooth;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		53F5266C1C47902900D81645 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NewBlueToothUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.starlink.NewBlueToothUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NewBlueTooth;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		53F5262F1C47902900D81645 /* Build configuration list for PBXProject "NewBlueTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F526621C47902900D81645 /* Debug */,
+				53F526631C47902900D81645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F526641C47902900D81645 /* Build configuration list for PBXNativeTarget "NewBlueTooth" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F526651C47902900D81645 /* Debug */,
+				53F526661C47902900D81645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F526671C47902900D81645 /* Build configuration list for PBXNativeTarget "NewBlueToothTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F526681C47902900D81645 /* Debug */,
+				53F526691C47902900D81645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		53F5266A1C47902900D81645 /* Build configuration list for PBXNativeTarget "NewBlueToothUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53F5266B1C47902900D81645 /* Debug */,
+				53F5266C1C47902900D81645 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		53F526431C47902900D81645 /* NewBlueTooth.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				53F526441C47902900D81645 /* NewBlueTooth.xcdatamodel */,
+			);
+			currentVersion = 53F526441C47902900D81645 /* NewBlueTooth.xcdatamodel */;
+			path = NewBlueTooth.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 53F5262C1C47902900D81645 /* Project object */;
+}
